@@ -7,7 +7,8 @@ if __name__ == '__main__':
         if commands[0] == 'insert':
             ans.insert(int(commands[1]), int(commands[2]))
         elif commands[0] == 'print':
-            show_ans.append(ans)
+            x = ans.copy()
+            show_ans.append(x)
         elif commands[0] == 'remove':
             ans.remove(int(commands[1]))
         elif commands[0] == 'append':
